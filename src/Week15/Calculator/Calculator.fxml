@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Week15.Calculator.CalculatorController">
+   <top>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="inputTF1" />
+            <TextField fx:id="inputTF2" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addNumbers" text="+" />
+            <Button fx:id="subButton" mnemonicParsing="false" onAction="#subtractNumbers" text="-" />
+            <Button fx:id="multButton" mnemonicParsing="false" onAction="#multiplyNumbers" text="*" />
+            <Button fx:id="divButton" mnemonicParsing="false" onAction="#divideNumbers" text="/" />
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <TextField fx:id="resultTF" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
